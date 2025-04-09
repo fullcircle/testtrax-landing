@@ -4,35 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fullcirclenetworks.com - TestTrax</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Include Google Fonts for the company name -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            max-width: 150px; /* Adjust size to match Lecca.io logo */
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #4a90e2; /* Blue hover effect like Lecca.io */
+        }
+
+        .nav-cta {
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-cta:hover {
+            background-color: #357abd;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .hero-cta:hover {
+            background-color: #357abd;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px 20px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .hero-cta {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="top-bar">
-            Coming soon, our updated website...
+        <div class="logo">
+            <a href="/">
+                <img src="testtrax-logo.png" alt="TestTrax Logo">
+            </a>
         </div>
         <nav>
-            <a href="/" class="logo">Fullcirclenetworks.com</a>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">My account</a></li>
-            </ul>
-            <div class="search-cart">
-                <input type="text" class="search-bar" placeholder="Search products">
-                <button class="cart-btn">🛒</button>
-            </div>
+            <a href="#">Product</a>
+            <a href="#">Pricing</a>
+            <a href="#">Company</a>
+            <a href="#">Resources</a>
+            <a href="#" class="nav-cta">Get Started</a>
         </nav>
     </header>
     <section class="hero">
-        <div class="hero-content">
-            <div class="hero-image">
-                <img src="testtrax-logo.png" alt="TestTrax Logo">
-            </div>
-        </div>
+        <h1>Connect to our Autonomous Vehicle Simulator</h1>
+        <p>Let's work together to make Autonomous Vehicle design standardized and automated.</p>
+        <a href="#" class="hero-cta">Get Started</a>
     </section>
 </body>
 </html>
