@@ -3,41 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TestTrax - Coming Soon</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: #000000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            text-align: center;
-        }
-        .logo {
-            max-width: 300px;
-            width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        .coming-soon {
-            color: #ffffff;
-            font-size: 24px;
-            font-weight: bold;
-        }
-    </style>
+    <title>Tazza - Fall Tea Flavours</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <img src="testtrax-logo.png" alt="TestTrax Logo" class="logo">
-        <p class="coming-soon">Idling.....coming soon</p>
-    </div>
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <p>Coming Soon, our updated website....</p>
+        </div>
+        <nav>
+            <div class="logo">Fullcirclentworks.com</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">My account</a></li>
+            </ul>
+            <div class="search-cart">
+                <input type="text" placeholder="Search products" class="search-bar">
+                <button class="cart-btn">🛒</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Browse our services</h1>
+                <p>Can't beat our prices for simulation</p>
+                <button class="shop-now-btn">SHOP NOW</button>
+            </div>
+            <div class="hero-image">
+                <img src="tea-image.jpg" alt="Cup of tea with fall decor">
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
