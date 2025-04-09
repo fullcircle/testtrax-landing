@@ -4,102 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fullcirclenetworks.com - TestTrax</title>
-    <style>
-        /* Reset default margins and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Style the body */
-        body {
-            background-color: #f5f5f5; /* Light gray background to match the image */
-            font-family: Arial, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Header styling */
-        header {
-            background-color: #f8e4b7; /* Light yellow background from the image */
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Center and style the company name */
-        .company-name {
-            flex: 1;
-            text-align: center;
-        }
-
-        .company-name a {
-            font-size: 28px; /* Larger font size */
-            font-weight: bold;
-            color: #333; /* Darker color for contrast */
-            text-decoration: none;
-            font-family: 'Roboto', sans-serif; /* Modern font */
-        }
-
-        /* Navigation links */
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            color: #333;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* Search bar (placeholder, as seen in the image) */
-        .search-bar {
-            display: flex;
-            align-items: center;
-        }
-
-        .search-bar input {
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-
-        /* Main content */
-        main {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        /* Center and resize the TestTrax logo */
-        .logo-container {
-            text-align: center;
-        }
-
-        .logo-container img {
-            max-width: 200px; /* Smaller size for the logo */
-            width: 100%;
-            height: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
     <!-- Include Google Fonts for the company name -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <!-- Centered company name -->
-        <div class="company-name">
-            <a href="/">Fullcirclenetworks.com</a>
+        <div class="top-bar">
+            Coming soon, our updated website...
         </div>
-        <!--
+        <nav>
+            <a href="/" class="logo">Fullcirclenetworks.com</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">My account</a></li>
+            </ul>
+            <div class="search-cart">
+                <input type="text" class="search-bar" placeholder="Search products">
+                <button class="cart-btn">🛒</button>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="testtrax-logo.png" alt="TestTrax Logo">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
